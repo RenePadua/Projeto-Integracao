@@ -3,7 +3,7 @@
 </h1>
 
 ## Sobre o Projeto / About the Project
-Página desenvolvida para apresentar a empresa Integração
+Página desenvolvida para a empresa Integração / Page developed for the company Integração
 
 ```
 Projeto Integração/
