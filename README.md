@@ -10,7 +10,7 @@ Projeto Integração/
   │ 
 assets
   ├── css/
-  │ └── styles.css
+  │ └── reset.css
   │ └── styles.css
   │── js/
   │   └── javascripts.js
