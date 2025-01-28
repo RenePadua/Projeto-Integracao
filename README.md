@@ -3,7 +3,7 @@
 </h1>
 
 ## Sobre o Projeto / About the Project
-Página desenvolvida para apresentar a empresa Integração / Page developed to showcase my IT resume in a 'pocket' format."
+Página desenvolvida para apresentar a empresa Integração
 
 ```
 Projeto Integração/
