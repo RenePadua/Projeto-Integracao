@@ -7,33 +7,45 @@ Página desenvolvida para a empresa Integração / Page developed for the compan
 
 ```
 Projeto Integração/
-  │ 
-assets
-  ├── css/
-  │ └── reset.css
-  │ └── styles.css
-  │── js/
-  │   └── javascripts.js
-  ├── img/
-  │    └── favicon.ico
-  │    └── fundo01.jpeg
-  │    └── fundo03.jpeg
-  │    └── fundo03b.jpeg
-  │    └── fundo03c.jpeg
-  │    └── fundo04.jpeg
-  │    └── fundo04b.jpeg
-  │    └── fundo04c.jpeg    
-  │    └── fundo05.jpeg
-  │    └── logo.png
-  │    └── logo2.png
-  │    └── picture-ana.jpg
-  │    └── picture-tatiane.jpg
-  │    └── separador.png
-  │    └── separador02.png
-  │    └── ico-bag.png
-  │    └── ico-hands.png
-  ├── index.html
-  └── README.md
+├── assets/
+│   ├── css/
+│   │   ├── reset.css
+│   │   └── styles.css
+│   ├── js/
+│   │   └── javascripts.js
+│   ├── img/
+│   │   ├── favicon.ico
+│   │   ├── fundo01.jpeg
+│   │   ├── fundo03.jpeg
+│   │   ├── fundo03b.jpeg
+│   │   ├── fundo03c.jpeg
+│   │   ├── fundo04.jpeg
+│   │   ├── fundo04b.jpeg
+│   │   ├── fundo04c.jpeg
+│   │   ├── fundo05.jpeg
+│   │   ├── logo.png
+│   │   ├── logo2.png
+│   │   ├── picture-ana.jpg
+│   │   ├── picture-tatiane.jpg
+│   │   ├── separador.png
+│   │   ├── separador02.png
+│   │   ├── ico-bag.png
+│   │   ├── ico-hands.png
+│   │   └── clientes/
+│   │       ├── alphaview-logo.png
+│   │       ├── casa-logo.png
+│   │       ├── global-care-logo.png
+│   │       ├── holhos-logo.png
+│   │       ├── hospital-geral-fucs-logo.png
+│   │       ├── logo-scroll.png
+│   │       ├── mobilitare-logo.png
+│   │       ├── nsc-logo.png
+│   │       ├── oftalmos-logo.png
+│   │       ├── one-day-hospital-logo.png
+│   │       ├── unimed-cuiaba-logo.png
+│   │       └── vision-one-logo.png
+├── index.html
+└── README.md
 ```
 
 ## Tecnologias / Technologies
