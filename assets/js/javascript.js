@@ -15,12 +15,19 @@ contentBoxes.forEach(box => {
 
 
 //Scroll Screen:
-const myArrow = document.getElementById("downPage");
+document.addEventListener("DOMContentLoaded", function () {
+  const myArrow = document.getElementById("downPage");
 
-window.addEventListener("scroll", () => {
-  const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-  myArrow.classList.toggle("hidden", scrollTop >= 20);
+  if (myArrow) {
+    window.addEventListener("scroll", () => {
+      const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+      myArrow.classList.toggle("hidden", scrollTop >= 20);
+    });
+  }
 });
+
+
+
 
 //Scroll Back To Top Button
 // Get the button:
@@ -43,7 +50,7 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 };
 
-// Slide dos Logos (versão otimizada)
+// Slide dos Logos DE Clientes (versão otimizada)
 document.addEventListener("DOMContentLoaded", function () {
   const track = document.querySelector(".slider-track");
   const slides = document.querySelectorAll(".slide");
@@ -119,10 +126,11 @@ track.addEventListener("mouseleave", () => {
     currentIndex = (currentIndex + 1) % totalSlides;
     updateSlider();
   }, 5000);
-});
+});})
 
 
 // Verifica suporte à Web Share API apenas uma vez
+document.addEventListener("DOMContentLoaded", function () {
 const isShareSupported = !!navigator.share;
 
 if (isShareSupported) {
@@ -149,4 +157,5 @@ for (let i = 0; i < shareButtons.length; i++) {
         .then(() => console.log('Compartilhamento realizado com sucesso!'))
         .catch((error) => console.error('Erro ao compartilhar:', error));
     });
-}})
+}
+})

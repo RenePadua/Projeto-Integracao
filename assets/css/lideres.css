@@ -1,0 +1,233 @@
+@import url('./styles.css');
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+
+/* ----- Programa de Desenvolvimento de Líderes ------ */
+
+.programa-lideres-section .header-section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.programa-lideres-section .main-title {
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	text-align: center;
+	font-size: 3.5em;
+}
+
+.programa-lideres-section {
+	background-image: url(../img/bg-02.png);
+    background-size: contain;
+    height: 100%;
+    min-height: 500px;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    position: relative;
+    overflow: hidden;
+	padding-top: 60px !important;
+}
+
+/* Container principal */
+.programa-lideres-section .container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 1.5rem;
+}
+
+/* Título principal */
+.main-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2d5a3d;
+    line-height: 1.2;
+}
+
+/* Seção de conteúdo */
+.content-section {
+    display: grid;
+    grid-template-columns: 2fr;
+    gap: 2rem;
+    flex: 1;
+    align-items: start;
+}
+
+.main-categories {
+    display: flex;
+	margin: auto;
+}
+
+/* Categorias principais */
+.main-categories {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #002611;
+    padding: 1.5rem;
+    border-radius: 8px;
+    height: fit-content;
+	width:fit-content;
+}
+
+.category-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+}
+
+.checkbox-icon {
+    display: flex;
+    flex-shrink: 0;
+    margin-top: 0.125rem;
+}
+
+.checkbox-icon >  {
+	color: #fff !important;
+}
+
+
+.category-text {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.4;
+}
+
+/* Seção de detalhes */
+.details-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.details-column {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.detail-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.detail-checkbox {
+    display: flex;
+    flex-shrink: 0;
+    margin-top: 0.125rem;
+}
+
+.detail-text {
+    font-size: 1em;
+    color: #2d5a3d;
+    line-height: 1.4;
+}
+
+
+@media (max-width: 768px) {
+
+ 	.programa-lideres-section {
+        height: auto;
+        min-height: 60vh;
+        padding: 1.5rem;
+    }
+    
+    .programa-lideres-section .header-section {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+	
+	.programa-lideres-section .container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: auto;
+	}
+
+    .programa-lideres-section .main-title {
+        font-size: 2.5em;
+        max-width: 100%;
+    }
+        
+    .programa-lideres-section .content-section {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .programa-lideres-section .details-section {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .programa-lideres-section .main-categories {
+        padding: 1rem;
+    }
+    
+    .programa-lideres-section .category-text {
+        font-size: 0.95rem;
+    }
+    
+    .programa-lideres-section .detail-text {
+        font-size: 0.85rem;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+	.programa-lideres-section {
+        padding: 1rem;
+        height: auto;
+        min-height: 70vh;
+    }
+    
+    .programa-lideres-section .container {
+        gap: 1rem;
+    }
+    
+    .programa-lideres-section .main-title {
+        font-size: 2.5rem;
+        line-height: 1.3;
+    }
+        
+    .main-categories {
+        padding: 0.75rem;
+        gap: 0.75rem;
+    }
+    
+    .category-item {
+        gap: 0.5rem;
+    }
+    
+    .category-text {
+        font-size: 0.9rem;
+    }
+    
+    .detail-item {
+        gap: 0.4rem;
+    }
+    
+    .detail-text {
+        font-size: 0.8rem;
+    }
+    
+    .details-column {
+        gap: 0.5rem;
+    }
+}

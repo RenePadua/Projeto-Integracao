@@ -9,42 +9,58 @@ Página desenvolvida para a empresa Integração / Page developed for the compan
 Projeto Integração/
 ├── assets/
 │   ├── css/
+│   │   ├── consultoria.css
+│   │   ├── lideres.css
+│   │   ├── paciente.css
 │   │   ├── reset.css
-│   │   └── styles.css
+│   │   ├── styles.css
+│   │   └── treinamentos.css
 │   ├── js/
-│   │   └── javascripts.js
-│   ├── img/
-│   │   ├── favicon.ico
-│   │   ├── fundo01.jpeg
-│   │   ├── fundo03.jpeg
-│   │   ├── fundo03b.jpeg
-│   │   ├── fundo03c.jpeg
-│   │   ├── fundo04.jpeg
-│   │   ├── fundo04b.jpeg
-│   │   ├── fundo04c.jpeg
-│   │   ├── fundo05.jpeg
-│   │   ├── logo.png
-│   │   ├── logo2.png
-│   │   ├── picture-ana.jpg
-│   │   ├── picture-tatiane.jpg
-│   │   ├── separador.png
-│   │   ├── separador02.png
-│   │   ├── ico-bag.png
-│   │   ├── ico-hands.png
-│   │   └── clientes/
-│   │       ├── alphaview-logo.png
-│   │       ├── casa-logo.png
-│   │       ├── global-care-logo.png
-│   │       ├── holhos-logo.png
-│   │       ├── hospital-geral-fucs-logo.png
-│   │       ├── logo-scroll.png
-│   │       ├── mobilitare-logo.png
-│   │       ├── nsc-logo.png
-│   │       ├── oftalmos-logo.png
-│   │       ├── one-day-hospital-logo.png
-│   │       ├── unimed-cuiaba-logo.png
-│   │       └── vision-one-logo.png
+│   │   ├── diagrama.css
+│   │   ├── javascript.js
+│   │   └── testemunho.js
+│   └── img/
+│       ├── bg-01.png
+│       ├── bg-02.png
+│       ├── consultoria.png
+│       ├── cultura.png
+│       ├── diag.png
+│       ├── down-arrow.png
+│       ├── favicon.ico
+│       ├── fundo01-1920px.jpeg
+│       ├── fundo01-mobile-663px.jpeg
+│       ├── fundo02-textura.png
+│       ├── fundo03-1920px.png
+│       ├── fundo04-1920px.jpeg
+│       ├── fundo05.jpeg
+│       ├── ico-bag.png
+│       ├── ico-hands.png
+│       ├── logo-light.png
+│       ├── logo-nav.png
+│       ├── nastuh-abootalebi-ZtC4_rPCRXA-unsplash-1920px.jpg
+│       ├── person-chalkboard.png
+│       ├── picture-ana.jpg
+│       ├── picture-tatiane.jpg
+│       ├── plus.png
+│       ├── xp.png
+│       └── clientes/
+│           ├── alphaview-logo.png
+│           ├── casa-logo.png
+│           ├── global-care-logo.png
+│           ├── holhos-logo.png
+│           ├── hospital-geral-fucs-logo.png
+│           ├── logo-scroll.png
+│           ├── mobilitare-logo.png
+│           ├── nsc-logo.png
+│           ├── oftalmos-logo.png
+│           ├── one-day-hospital-logo.png
+│           ├── unimed-cuiaba-logo.png
+│           └── vision-one-logo.png
+├── consultoria.html
+├── experiencia.html
 ├── index.html
+├── lideres.html
+├── treinamentos.html
 └── README.md
 ```
 

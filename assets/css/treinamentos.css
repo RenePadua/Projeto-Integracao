@@ -1,0 +1,812 @@
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+/* Seção principal */
+.treinamentos-section {
+    padding-top: 16px;
+    background-image: url(../img/bg-01.png);
+    background-size: cover;
+    min-height: 100vh;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    background-color: #ffffff;
+    position: relative;
+}
+
+/* Container principal */
+.treinamentos-section .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Título principal */
+.treinamentos-section .main-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #2d5a3d;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+/* Container do diagrama */
+.diagram-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 2rem;
+}
+
+/* Diagrama de Venn - Base para > 1025px */
+.venn-diagram {
+    position: relative;
+    width: 450px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Círculos do diagrama - Base para > 1025px */
+.diagram-container .circle {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    opacity: 0.8;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+}
+
+.diagram-container .circle:hover {
+    opacity: 1;
+    transform: scale(1.05);
+    z-index: 10;
+}
+
+/* Posicionamento dos círculos - Base para > 1025px */
+.diagram-container .circle-pessoa {
+    top: 0;
+    left: 50px;
+    background-color: rgba(45, 90, 61, 0.7);
+}
+
+.diagram-container .circle-processo {
+    top: 0;
+    right: 50px;
+    background-color: rgba(45, 90, 61, 0.6);
+}
+
+.diagram-container .circle-proposito {
+    bottom: 0;
+    left: 50px;
+    background-color: rgba(45, 90, 61, 0.5);
+}
+
+.diagram-container .circle-performance {
+    bottom: 0;
+    right: 50px;
+    background-color: rgba(45, 90, 61, 0.8);
+}
+
+/* Labels dos círculos */
+.treinamentos-section .circle-label {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    line-height: 1.2;
+}
+
+/* Container do carrossel */
+.treinamentos-section .carousel-container {
+    width: 100%;
+    max-width: 1000px;
+    position: relative;
+}
+
+/* Wrapper do carrossel */
+.treinamentos-section .carousel-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(45, 90, 61, 0.1);
+}
+
+/* Track do carrossel */
+.treinamentos-section .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+
+
+/* Cards de conteúdo */
+.treinamentos-section .content-card {
+    flex: 0 0 300px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(45, 90, 61, 0.1);
+    border: 1px solid #e9ecef;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.treinamentos-section .content-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(45, 90, 61, 0.15);
+}
+
+/* Header do card */
+.treinamentos-section .card-header {
+    background-color: #2d5a3d;
+    color: white;
+    padding: 1.25rem;
+    text-align: center;
+}
+
+.treinamentos-section .card-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+}
+
+.treinamentos-section .card-subtitle {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.3;
+}
+
+/* Conteúdo do card */
+.treinamentos-section .card-content {
+    padding: 1.5rem;
+}
+
+.treinamentos-section .card-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.treinamentos-section .card-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    font-size: 0.9rem;
+    color: #5a6c7d;
+    line-height: 1.4;
+    position: relative;
+    padding-left: 1rem;
+}
+
+.treinamentos-section .card-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #2d5a3d;
+    flex-shrink: 0;
+}
+
+/* Botões do carrossel */
+.treinamentos-section .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(45, 90, 61, 0.9);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10;
+    box-shadow: 0 4px 12px rgba(45, 90, 61, 0.3);
+}
+
+.treinamentos-section .carousel-btn:hover {
+    background-color: #2d5a3d;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.treinamentos-section .carousel-btn:active {
+    transform: translateY(-50%) scale(0.95);
+}
+
+.treinamentos-section .carousel-btn-prev {
+    left: -18px;
+}
+
+.treinamentos-section .carousel-btn-next {
+    right: -18px;
+}
+
+/* Indicadores do carrossel */
+.treinamentos-carousel-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.treinamentos-section .indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(45, 90, 61, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.treinamentos-section .indicator.active {
+    background-color: #2d5a3d;
+    transform: scale(1.2);
+}
+
+.treinamentos-section .indicator:hover {
+    background-color: rgba(45, 90, 61, 0.6);
+}
+
+/* Controles adicionais */
+.treinamentos-section .carousel-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.treinamentos-section .control-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: transparent;
+    border: 2px solid #2d5a3d;
+    color: #2d5a3d;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.treinamentos-section .control-btn:hover {
+    background-color: #2d5a3d;
+    color: white;
+}
+
+.treinamentos-section .control-btn.active {
+    background-color: #2d5a3d;
+    color: white;
+}
+
+.treinamentos-section .carousel-counter {
+    font-size: 0.9rem;
+    color: #5a6c7d;
+    font-weight: 500;
+}
+
+/* Cores específicas por categoria */
+.treinamentos-section .content-card[data-category="pessoa"] .card-header {
+    background-color: #2d5a3d;
+}
+
+.treinamentos-section .content-card[data-category="processo"] .card-header {
+    background-color: #1e3d2a;
+}
+
+.treinamentos-section .content-card[data-category="proposito"] .card-header {
+    background-color: #3d6b4a;
+}
+
+.treinamentos-section .content-card[data-category="performance"] .card-header {
+    background-color: #0f2a18;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+
+    /* Container do carrossel */
+    .treinamentos-section .carousel-container {
+        width: 100%;
+        max-width: 900px;
+        position: relative;
+    }
+
+
+    .treinamentos-section {
+        padding: 2rem 1.5rem;
+    }
+    
+    .treinamentos-section .container {
+        gap: 2rem;
+    }
+    
+   .treinamentos-section  .main-title {
+        font-size: 2.5rem;
+    }
+    
+    .venn-diagram {
+        width: 380px;
+        height: 300px;
+    }
+    
+   .treinamentos-section .circle {
+        width: 170px;
+        height: 170px;
+    }
+    
+   .treinamentos-section .circle-pessoa {
+        top: 0;
+        left: 40px;
+    }
+    
+    .treinamentos-section .circle-processo {
+        top: 0;
+        right: 40px;
+    }
+    
+    .treinamentos-section .circle-proposito {
+        bottom: 0;
+        left: 40px;
+    }
+    
+    .treinamentos-section .circle-performance {
+        bottom: 0;
+        right: 40px;
+    }
+    
+    .treinamentos-section .circle-label {
+        font-size: 0.9rem;
+    }
+    
+   .treinamentos-section .content-card {
+        flex: 0 0 280px;
+    }
+    
+    .treinamentos-section .carousel-btn-prev {
+        left: -20px;
+    }
+    
+    .treinamentos-section .carousel-btn-next {
+        right: -20px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* Container do carrossel */
+    .treinamentos-section .carousel-container {
+        width: 100%;
+        max-width:600px;
+        position: relative;
+    }
+
+    .treinamentos-section {
+        padding-top: 36px;
+        padding: 1.5rem 1rem;
+    }
+    
+    .main-title {
+        font-size: 1.75rem;
+    }
+    
+    .venn-diagram {
+        width: 380px;
+        height: 300px;
+    }
+    
+    .circle {
+        width: 140px;
+        height: 140px;
+    }
+    
+    .circle-pessoa {
+        top: 0;
+        left: 30px;
+    }
+    
+    .circle-processo {
+        top: 0;
+        right: 30px;
+    }
+    
+    .circle-proposito {
+        bottom: 0;
+        left: 30px;
+    }
+    
+    .circle-performance {
+        bottom: 0;
+        right: 30px;
+    }
+    
+    .circle-label {
+        font-size: 0.8rem;
+    }
+    
+    .content-card {
+        flex: 0 0 260px;
+    }
+    
+    .carousel-btn {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .carousel-btn-prev {
+        left: -16px;
+    }
+    
+    .carousel-btn-next {
+        right: -16px;
+    }
+    
+    .card-header {
+        padding: 1rem;
+    }
+    
+    .card-content {
+        padding: 1.25rem;
+    }
+    
+    .card-list li {
+        font-size: 0.85rem;
+    }
+}
+
+@media (width: 768px) and (height: 1024px) {
+  /* Only iPad Mini */
+
+	#treinamentos {
+       padding-top: 56px;
+	}
+
+}
+
+
+@media (max-width: 480px) {
+
+    #treinamentos {
+        padding-top: 56px;
+    }
+
+    /* Container do carrossel */
+    .treinamentos-section .carousel-container {
+        width: 100%;
+        max-width: 310px;
+        position: relative;
+    }
+
+    .treinamentos-section {
+        padding: 1rem 0.75rem;
+    }
+    
+    .main-title {
+        font-size: 2.5rem !important;
+    }
+    
+    .venn-diagram {
+        width: 380px;
+        height: 300px;
+    }
+    
+    .circle {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .circle-pessoa {
+        top: 0;
+        left: 20px;
+    }
+    
+    .circle-processo {
+        top: 0;
+        right: 20px;
+    }
+    
+    .circle-proposito {
+        bottom: 0;
+        left: 20px;
+    }
+    
+    .circle-performance {
+        bottom: 0;
+        right: 20px;
+    }
+    
+    .circle-label {
+        font-size: 0.7rem;
+    }
+    
+    .content-card {
+        flex: 0 0 240px;
+    }
+    
+    .carousel-btn {
+        width: 36px;
+        height: 36px;
+    }
+    
+    .carousel-btn-prev {
+        left: -12px;
+    }
+    
+    .carousel-btn-next {
+        right: -12px;
+    }
+    
+    .card-title {
+        font-size: 0.9rem;
+    }
+    
+    .card-subtitle {
+        font-size: 1rem;
+    }
+    
+    .card-list li {
+        font-size: 0.8rem;
+        gap: 0.5rem;
+    }
+    
+    .carousel-controls {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+
+@media (max-width: 425px) {
+
+    /* Container do carrossel */
+    .treinamentos-section .carousel-container {
+        width: 100%;
+        max-width: 280px;
+        position: relative;
+    }
+
+    /* Cards de conteúdo */
+    .treinamentos-section .content-card {
+        flex: 0 0 250px !important;
+        background-color: #ffffff;
+        border-radius: 12px;
+        box-shadow: 0 4px 16px rgba(45, 90, 61, 0.1);
+        border: 1px solid #e9ecef;
+        transition: all 0.3s ease;
+        overflow: hidden;
+    }
+
+
+    .treinamentos-section {
+        padding: 1rem 0.75rem;
+    }
+    
+    .main-title {
+        font-size: 1.5rem;
+    }
+    
+    .venn-diagram {
+        width: 380px;
+        height: 300px;
+    }
+
+}
+
+
+@media (max-width: 375px) {
+    .treinamentos-section {
+        padding: 1rem 0.75rem;
+    }
+    
+    .main-title {
+        font-size: 1.5rem;
+    }
+    
+    .venn-diagram {
+        width: 350px;
+        height: 280px;
+    }
+    
+    .circle {
+        width: 160px !important;
+        height: 160px !important;
+    }
+    
+    .circle-pessoa {
+        top: 0;
+        left: 20px !important;
+    }
+    
+    .circle-processo {
+        top: 0;
+        right: 20px !important;
+    }
+    
+    .circle-proposito {
+        bottom: 0;
+        left: 20px !important;
+    }
+    
+    .circle-performance {
+        bottom: 0;
+        right: 20px !important;
+    }
+    
+    .circle-label {
+        font-size: 0.6rem;
+    }
+    
+    .content-card {
+        flex: 0 0 240px;
+    }
+    
+    .carousel-btn {
+        width: 36px;
+        height: 36px;
+    }
+    
+    .carousel-btn-prev {
+        left: -12px;
+    }
+    
+    .carousel-btn-next {
+        right: -12px;
+    }
+    
+    .card-title {
+        font-size: 0.9rem;
+    }
+    
+    .card-subtitle {
+        font-size: 1rem;
+    }
+    
+    .card-list li {
+        font-size: 0.8rem;
+        gap: 0.5rem;
+    }
+    
+    .carousel-controls {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+
+@media (max-width: 320px) {
+    .treinamentos-section {
+        padding: 1rem 0.75rem;
+    }
+
+    .venn-diagram {
+        width: 300px;
+        height: 232px;
+    }
+    
+    .circle {
+        width: 125px !important;
+        height: 125px !important;
+    }
+}
+
+
+/* Animações */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.content-card {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+/* Estados de loading */
+.carousel-track.loading {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+/* Melhorias de acessibilidade */
+.circle:focus,
+.carousel-btn:focus,
+.control-btn:focus,
+.indicator:focus {
+    outline: 2px solid #2d5a3d;
+    outline-offset: 2px;
+}
+
+/* Scrollbar personalizada para cards com muito conteúdo */
+.card-content::-webkit-scrollbar {
+    width: 4px;
+}
+
+.card-content::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 2px;
+}
+
+.card-content::-webkit-scrollbar-thumb {
+    background: #2d5a3d;
+    border-radius: 2px;
+}
+
+.card-content::-webkit-scrollbar-thumb:hover {
+    background: #1e3d2a;
+}
+
+/* Efeitos especiais */
+.carousel-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, 
+        rgba(248, 249, 250, 0.8) 0%, 
+        transparent 10%, 
+        transparent 90%, 
+        rgba(248, 249, 250, 0.8) 100%);
+    pointer-events: none;
+    z-index: 5;
+}
+
+/* Variações de tema */
+.treinamentos-section.theme-blue .circle {
+    background-color: rgba(21, 101, 192, 0.7);
+}
+
+.treinamentos-section.theme-blue .content-card .card-header {
+    background-color: #1565c0;
+}
+
+.treinamentos-section.theme-blue .carousel-btn {
+    background-color: rgba(21, 101, 192, 0.9);
+}
+
+.treinamentos-section.theme-blue .indicator.active {
+    background-color: #1565c0;
+}
+
+
