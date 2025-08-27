@@ -210,11 +210,11 @@ header {
 
 #downPage {
 	position: fixed;
-	bottom: 15px;
+	bottom: 15px;  
 	left: 50%;
 	transform: translateX(-50%);
 	z-index: 99;
-	animation: piscando 1550ms 6 forwards;
+	animation: piscando 1550ms 4 forwards;
 	transition: opacity 0.3s ease;
 	opacity: 1;
 	pointer-events: auto;
@@ -226,10 +226,9 @@ header {
 }
 
 #downPage img {
-	width: 20%;
+	width: clamp(50px, 15vw, 100px);
 	height: auto;
 	display: block;
-	margin: auto;
 }
 
 section#header {
@@ -877,7 +876,7 @@ div#section04box {
     align-items: center;
     justify-content: center;
     padding: 2rem;
-    background-image: url('/assets/img/nastuh-abootalebi-ZtC4_rPCRXA-unsplash-1920px.jpg');
+    background-image: url('../img/nastuh-abootalebi-ZtC4_rPCRXA-unsplash-1920px.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -1840,10 +1839,13 @@ hr.footerdivider+p {
 		max-width: 70%;
 	}
 
+	#downPage {
+		bottom: 69px;
+	}
+
 	#logo {
 		width: 80%;
 		max-width: 768px;
-		padding-top: 140px;
 		margin: auto;
 	}
 
@@ -2120,6 +2122,25 @@ hr.footerdivider+p {
 	}
 }
 
+
+@media (min-height: 790px) {
+
+    #logo {
+        padding-top: 180px;
+    }
+
+}
+
+
+
+@media (min-height: 750px) {
+
+    #logo {
+        padding-top: 140px;
+    }
+
+}
+
 /* Estilos gerais para dispositivos móveis */
 @media (max-width: 663px) {
 	/* Ajustes para dispositivos móveis */
@@ -2184,10 +2205,11 @@ hr.footerdivider+p {
 		background-position: 45% 90%;
 		background-size: cover;
 	}
-
-	#logo {
-		width: 100%;
-		max-width: 540px;
+	
+	#logo img {
+		padding-top: 100px;
+		width: 70% !important;
+		height: auto;
 	}
 
 	section#section02 {
@@ -2276,11 +2298,14 @@ hr.footerdivider+p {
 
 	header {
 		background-image: linear-gradient(to bottom, rgba(0, 38, 17, 0.6), rgba(255, 255, 255, 0.4)), url(../img/fundo01-mobile-663px.jpeg);
-		background-position: 80% 90%;
+		background-position: 50% 90%;
+		background-size: cover;
 	}
 
-	#logo {
-		padding-top: 260px;
+	#logo img {
+		padding-top: 100px;
+		width: 70% !important;
+		height: auto;
 	}
 
 	#header img {
@@ -2511,12 +2536,13 @@ hr.footerdivider+p {
 
 	header {
 		background-image: linear-gradient(to bottom, rgba(0, 38, 17, 0.6), rgba(255, 255, 255, 0.4)), url(../img/fundo01-mobile-663px.jpeg);
-		background-size: auto 100%;
+		background-size: auto 150%;
 		background-position: 50% 40% !important;
 	}
 
-	#logo {
-		padding-top: 130px;
+	#logo img {
+		width: 70% !important;
+		height: auto;
 	}
 
 	section#section02 {
@@ -2607,12 +2633,8 @@ hr.footerdivider+p {
 	header {
 		background-image: linear-gradient(to bottom, rgba(0, 38, 17, 0.6), rgba(255, 255, 255, 0.4)), url(../img/fundo01-mobile-663px.jpeg);
 		background-repeat: no-repeat;
-		background-position: 42% 220% !important;
-		background-size: 150%;
-	}
-
-	#logo {
-		padding-top: 200px;
+		background-position: center top !important;
+		background-size: cover;
 	}
 
 	div.row.justify-content-center.g-4 {
@@ -2732,12 +2754,8 @@ hr.footerdivider+p {
 	header {
 		background-image: linear-gradient(to bottom, rgba(0, 38, 17, 0.6), rgba(255, 255, 255, 0.4)), url(../img/fundo01-mobile-663px.jpeg);
 		background-repeat: no-repeat;
-		background-position: 42% 60% !important;
+		background-position: center 50% !important;
 		background-size: 150%;
-	}
-
-	#logo {
-		padding-top: 80px !important;
 	}
 
 	#section03 {
@@ -2759,14 +2777,13 @@ hr.footerdivider+p {
 	header {
 		background-image: linear-gradient(to bottom, rgba(0, 38, 17, 0.6), rgba(255, 255, 255, 0.4)), url(../img/fundo01-mobile-663px.jpeg);
 		background-repeat: no-repeat;
-		background-position: 48% 60% !important;
-		background-size: 200%;
+		background-position: center top !important;
+		background-size: cover;
 	}
 
 	#logo {
 		width: 100%;
 		margin: auto;
-		padding-top: 180px;
 	}
 
 	h2 {
