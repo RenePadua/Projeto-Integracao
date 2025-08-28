@@ -16,7 +16,7 @@ Projeto Integração/
 │   │   ├── styles.css
 │   │   └── treinamentos.css
 │   ├── js/
-│   │   ├── diagrama.css
+│   │   ├── diagrama.js
 │   │   ├── javascript.js
 │   │   └── testemunho.js
 │   └── img/
