@@ -55,7 +55,6 @@ body {
     display: flex;
     flex-wrap: wrap; 
     justify-content: center;
-    gap: 30px; /* Espaçamento entre os itens */
     margin-bottom: 40px;
     width: 100%;
     max-width: 800px;
