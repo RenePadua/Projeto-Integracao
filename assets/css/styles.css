@@ -809,6 +809,7 @@ div#section04box {
     margin: 0 auto;
     overflow: hidden;
     z-index: 2;
+	padding-top: 4rem;
 }
 
 .testemunho-carousel-track {
@@ -896,6 +897,18 @@ div#section04box {
     z-index: 1;
 }
 
+.testemunho-title {
+	display: flex;
+	margin: auto;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	padding-top: 2rem;
+	font-family: 'Oswald';
+	font-size: 3.5em;
+	color: #fff;
+}
+
 .quote-icon {
     margin-bottom: 2rem;
     opacity: 0.7;
@@ -912,7 +925,7 @@ div#section04box {
 }
 
 .testemunho-text {
-    font-size: 2.25rem;
+    font-size: 1.5rem;
     font-weight: 500;
     line-height: 1.4;
     margin-bottom: 3rem;
@@ -928,21 +941,8 @@ div#section04box {
     gap: 1.5rem;
 }
 
-.testemunho-avatar {
-    flex-shrink: 0;
-}
-
-.testemunho-photo {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
 .testemunho-details {
-    text-align: left;
+    text-align: center;
 }
 
 .testemunho-name {
@@ -1709,6 +1709,16 @@ hr.footerdivider+p {
 	}
 }
 
+/* Estilos gerais para dispositivos móveis */
+@media (max-width: 865px) and (min-width: 769px) {
+	/* Ajustes para dispositivos móveis */
+
+	.testemunho-carousel-track {
+		padding-top: 4rem;
+	}
+}
+
+
 @media (width: 853px) and (height: 1280px) {
 	/* Only Azus Zenbook Fold*/
 
@@ -1980,6 +1990,10 @@ hr.footerdivider+p {
 
 	/* -------------------   Testemunhos start ----------------------------*/
 
+	.testemunho-title {
+		font-size: 2.5em;
+	}
+
 	.testemunho-text {
         font-size: 1.5rem;
     }
@@ -2192,6 +2206,15 @@ hr.footerdivider+p {
 	footer {
 		width: 100%;
 		max-width: 663px;
+	}
+}
+
+/* Estilos gerais para dispositivos móveis */
+@media (max-width: 618px) and (min-width: 481px) {
+	/* Ajustes para dispositivos móveis */
+
+	.testemunho-carousel-track {
+		padding-top: 2rem;
 	}
 }
 
@@ -2452,6 +2475,15 @@ hr.footerdivider+p {
 	}
 
 	/* ---------------------- mobile - testemunhos start ------------------------*/
+
+	.testemunho-title {
+		padding: 2rem;
+		font-size: 2em;
+	}
+
+	.testemunho-carousel-track {
+		padding-top: 2rem;
+	}
 
 	.testemunho-section {
         padding: 1rem;
